@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  db:
+    container_name: Postgres
+    image: postgres
+    restart: always
+    ports:
+      - "5433:5432"
+    environment:
+      - DATABASE_HOST=localhost
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=library    
+
+  node:
+    container_name: Nodeapp
+    restart: always
+    build: .
+    ports:
+      - "5000:3000"
+    links:
+      - db
+    volumes:
+      - .:/app
+
+
