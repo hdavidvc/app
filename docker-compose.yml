@@ -23,5 +23,20 @@ services:
       - db
     volumes:
       - .:/app
+      
+  jenkins:
+    container_name: jenkins
+    image: jenkins/jenkins:lts
+    ports:
+      - "8081:8082"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    networks:
+      - jenkins
+    environment:
+      - JAVA_OPTS=-Djenkins.install.runSetupWizard=false
+      - JENKINS_OPTS=--prefix=/jenkins
+    restart: always
+    user: root
 
 
