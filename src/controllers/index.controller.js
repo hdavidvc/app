@@ -11,7 +11,8 @@ const pool = new Pool({
 
 const getBook = async(req, res) => {
     const response = await pool.query('select * from books');
-    res.send(response.rows);
+    res.status(200).json({ Creador:"Hector David Cabrera", content:response.rows});
+    //res.send(response.rows);
     console.log(response.rows);
     // pool.end(); 
 

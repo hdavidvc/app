@@ -9,4 +9,4 @@ app.use(require('./routes/index'));
 
 
 app.listen(3000)
-console.log('Puerto interno: 3000 - externo: 5000 david')
+console.log('Puerto interno: 3000 - externo: 5000 david cabrera 30/10/2022')
