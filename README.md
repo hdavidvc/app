@@ -5,5 +5,5 @@
 
 ## Authors
 
-- [@David cabrera](https://www.github.com/hdavidvc)
+- [@David Cabrera](https://www.github.com/hdavidvc)
 
