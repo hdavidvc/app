@@ -11,8 +11,8 @@ const pool = new Pool({
 
 const getBook = async(req, res) => {
     const response = await pool.query('select * from books');
-    res.write('JENKINS ME MANDO')
-    res.send(response.rows);
+    res.status(200).json({ Titulo:variable, content:response.rows});
+    //res.send(response.rows);
     console.log(response.rows);
     // pool.end(); 
 
