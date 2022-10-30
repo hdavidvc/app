@@ -1,5 +1,5 @@
 
-# Node-Postgress-Jenkins
+# Node-Postgress-Jenkins-Docker
 
 ## Description 2.0.1
 
