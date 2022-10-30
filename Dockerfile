@@ -7,5 +7,3 @@ COPY package*.json ./
 RUN npm i express nodemon pg
 
 COPY . .
-
-CMD ["npm", "run", "dev"]
