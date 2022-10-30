@@ -1,7 +1,5 @@
 
-# Node-Postgress
-
-A brief description of what this project does and who it's for
+# Node-Postgress-Jenkins
 
 
 ## Authors
